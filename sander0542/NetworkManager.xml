@@ -11,6 +11,8 @@
   <Project>https://github.com/Sander0542/Network-Manager</Project>
   <Overview>With this Docker you can manage the used hosts in your networks. It supports multiple networks based on their subnet and size. Within each host you can specify the ports that are used and the services that are running on them.</Overview>
   <Category>Productivity: Tools:</Category>
+  <Beta>True</Beta>
+  <Requires>MySQL</Requires>
   <WebUI>http://[IP]:[PORT:9000]</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Sander0542/docker-templates/main/sander0542/NetworkManager.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Sander0542/docker-templates/main/sander0542/icons/NetworkManager.png</Icon>
@@ -18,8 +20,6 @@
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1640359858</DateInstalled>
-  <DonateText>If you like my work please consider Donating.</DonateText>
-  <DonateLink>https://github.com/sponsors/Sander0542</DonateLink>
   <Description>With this Docker you can manage the used hosts in your networks. It supports multiple networks based on their subnet and size. Within each host you can specify the ports that are used and the services that are running on them.</Description>
   <Networking>
     <Mode>bridge</Mode>
