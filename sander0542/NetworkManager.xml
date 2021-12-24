@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>NetworkManager</Name>
+  <Repository>sander0542/network-manager</Repository>
+  <Registry>https://hub.docker.com/r/sander0542/network-manager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://github.com/Sander0542/Network-Manager</Project>
+  <Overview>With this Docker you can manage the used hosts in your networks. It supports multiple networks based on their subnet and size. Within each host you can specify the ports that are used and the services that are running on them.</Overview>
+  <Category>Productivity: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:9000]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Sander0542/docker-templates/main/sander0542/NetworkManager.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Sander0542/docker-templates/main/sander0542/icons/NetworkManager.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1640359858</DateInstalled>
+  <DonateText>If you like my work please consider Donating.</DonateText>
+  <DonateLink>https://github.com/sponsors/Sander0542</DonateLink>
+  <Description>With this Docker you can manage the used hosts in your networks. It supports multiple networks based on their subnet and size. Within each host you can specify the ports that are used and the services that are running on them.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9000</HostPort>
+        <ContainerPort>9000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>base64:zLM31nhu8IxBbn95XcrDML/ZJBbi8dqG3gEdYyUueSI=</Value>
+      <Name>APP_KEY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>10.10.11.20</Value>
+      <Name>DB_HOST</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>3306</Value>
+      <Name>DB_PORT</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>network_manager</Value>
+      <Name>DB_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>GqveavzQ7kB6ApQVRzuksqPwvzQmFgSn</Value>
+      <Name>DB_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>network_manager</Value>
+      <Name>DB_DATABASE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>false</Value>
+      <Name>OCTANE_HTTPS</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Web Port" Target="9000" Default="9000" Mode="tcp" Description="The port used for the HTTP service" Type="Port" Display="always" Required="true" Mask="false">9000</Config>
+  <Config Name="Application Key" Target="APP_KEY" Default="" Mode="" Description="The key used to secure data. (random string of 32 characters [a-zA-Z0-9])" Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Database Host" Target="DB_HOST" Default="127.0.0.1" Mode="" Description="Container Variable: DB_HOST" Type="Variable" Display="always" Required="false" Mask="false">127.0.0.1</Config>
+  <Config Name="Database Port" Target="DB_PORT" Default="3306" Mode="" Description="Container Variable: DB_PORT" Type="Variable" Display="always" Required="false" Mask="false">3306</Config>
+  <Config Name="Database Username" Target="DB_USERNAME" Default="root" Mode="" Description="Container Variable: DB_USERNAME" Type="Variable" Display="always" Required="false" Mask="false">root</Config>
+  <Config Name="Database Password" Target="DB_PASSWORD" Default="" Mode="" Description="Container Variable: DB_PASSWORD" Type="Variable" Display="always" Required="false" Mask="true"></Config>
+  <Config Name="Database Database" Target="DB_DATABASE" Default="network_manager" Mode="" Description="Container Variable: DB_DATABASE" Type="Variable" Display="always" Required="false" Mask="false">network_manager</Config>
+  <Config Name="HTTPS" Target="OCTANE_HTTPS" Default="false|true" Mode="" Description="Whether the webserver should generate HTTPS links instead of HTTP links. (Set this to true when running behind a HTTPS proxy)" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
