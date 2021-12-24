@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://forums.unraid.net/topic/117642-support-sander0542-network-manager/</Support>
   <Project>https://github.com/Sander0542/Network-Manager</Project>
   <Overview>With this Docker you can manage the used hosts in your networks. It supports multiple networks based on their subnet and size. Within each host you can specify the ports that are used and the services that are running on them.</Overview>
   <Category>Productivity: Tools:</Category>
